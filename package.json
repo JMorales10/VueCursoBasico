@@ -1,0 +1,19 @@
+{
+  "name": "cursovue",
+  "version": "0.1.0",
+  "description": "Scaffolding of a Vue project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMoralesC10/VueCursoBasico.git"
+  },
+  "author": "Jesus Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMoralesC10/VueCursoBasico/issues"
+  },
+  "homepage": "https://github.com/JMoralesC10/VueCursoBasico#readme"
+}
