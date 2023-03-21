@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JMoralesC10/VueCursoBasico/issues"
   },
-  "homepage": "https://github.com/JMoralesC10/VueCursoBasico#readme"
+  "homepage": "https://github.com/JMoralesC10/VueCursoBasico#readme",
+  "dependencies": {
+    "vue": "^3.2.47"
+  }
 }
