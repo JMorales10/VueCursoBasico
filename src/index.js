@@ -1,7 +1,7 @@
-import Vue from 'vue'
 import App from 'frontend/App.vue'
+import Vue from 'vue'
 
 new Vue({
-  el: '#add',
-  render: h => h(App)
+  el: '#app',
+  render: h => h(App),
 })
