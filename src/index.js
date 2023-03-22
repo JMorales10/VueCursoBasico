@@ -1,7 +1,6 @@
-import App from 'frontend/App.vue'
-import Vue from 'vue'
+import App from './App.vue'
+import { createApp } from 'vue'
 
-new Vue({
-  el: '#app',
-  render: h => h(App),
-})
+export const eventBus = createApp(App)
+
+createApp(App).mount('#app')
