@@ -1,8 +1,9 @@
+import App from "frontend/App.vue"
 import FormPage from "./components/FormPage.vue"
 import { createRouter, createWebHistory } from "vue-router"
 
 const routes = [
-  {path: '/:catchAll(.*)', redirect: '/home'},
+  {path: '/', name: 'dashboard', component: App},
   {path: '/home',  name: 'form-page',component: FormPage},
 ]
 
