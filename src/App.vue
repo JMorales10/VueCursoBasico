@@ -1,5 +1,9 @@
 <template>
-  <div>
-    <h1>Hello World!!</h1>
-  </div>
+  <nav>
+    <router-link to="/home">
+      Home
+    </router-link>
+    <router-view />
+  </nav>
 </template>
+
