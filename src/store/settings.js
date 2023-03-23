@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const MOCK_URL = 'https://jsonplaceholder.typicode.com/todos/1'
 
 const stateObj = {
@@ -21,10 +23,13 @@ const mutations = {
 
 const actions = {
   fetchModulePermissions () {
-    fetch(MOCK_URL)
-    .then(response => response.json())
-    // eslint-disable-next-line no-console
-    .then(data => console.log(data))
+    return new Promise((resolve, reject) => {
+      axios.get(MOCK_URL)
+      .then((modulePermissions) => {
+        resolve(modulePermissions)
+      })
+      .catch(e => reject(e))
+    })
   },
 }
 

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JMoralesC10/VueCursoBasico#readme",
   "dependencies": {
+    "axios": "^1.3.4",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"

@@ -5,21 +5,20 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex"
 export default {
   data () {
     return {
       settings: null,
-      json: null,
     }
   },
   created () {
-    this.settings = this.fetchModulePermissions()
+    this.fetchModulePermissions().then((response) => {
+      this.settings = response.data
+    })
   },
   methods: {
-    ...mapActions([
-      'fetchModulePermissions',
-    ]),
+    ...mapActions(["fetchModulePermissions"]),
   },
 }
 </script>
