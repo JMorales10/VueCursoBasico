@@ -10,13 +10,11 @@ export default {
   data () {
     return {
       settings: null,
+      json: null,
     }
   },
   created () {
-    this.fetchModulePermissions().then((response) => {
-      this.settings = response.blob()
-      String.p
-    })
+    this.settings = this.fetchModulePermissions()
   },
   methods: {
     ...mapActions([
